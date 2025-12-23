@@ -45,7 +45,7 @@ public class SecurityConfig {
 
         config.setAllowedOrigins(List.of(
                 "http://localhost:5173",
-                "https://myappinvoce.netlify.app"
+                "https://invoicemeapp.netlify.app"
         ));
 
         config.setAllowedMethods(List.of(
@@ -62,4 +62,5 @@ public class SecurityConfig {
         source.registerCorsConfiguration("/**", config);
         return source;
     }
+
 }
